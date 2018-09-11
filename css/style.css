@@ -36,6 +36,10 @@ h5 {
 	text-transform: uppercase;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:hover {
 	cursor: pointer;
 }
@@ -241,6 +245,119 @@ a:hover {
     padding-right: 5px;
 }
 
+.page_footer {
+	display: grid;
+
+	width: 100%;
+	height: 100vh;
+
+	background: url(../images/background_images/washington_satellite_image.png) center center no-repeat;
+	background-size: cover;
+
+	grid-template-rows: 2fr 3fr;
+	grid-template-areas: 
+		"."
+		"footer_text_area";
+}
+
+.page_footer .footer_text_area {
+	grid-area: footer_text_area;
+	display: grid;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: #333366f2;	
+
+	grid-template-columns: 10% 1fr 1fr 1fr 10%;
+	grid-template-rows: 5% 3fr 1fr 1fr 1fr 1fr 5%;
+	grid-template-areas: 
+		". . . . ."
+		". footer_logo footer_logo footer_address ."
+		". footer_row1 footer_row1 women_owned ."
+		". footer_row2 footer_row2 women_owned ."
+		". footer_row3 footer_row3 women_owned ."
+		". footer_row4 footer_row4 footer_row4 ."
+		". . . . .";
+
+	color: white;
+}
+
+.page_footer .footer_text_area .footer_logo {
+	grid-area: footer_logo;
+
+	width: 90%;
+	height: 90%;
+
+	background: url(../images/logo/ANPS_Logo_V7_Web_White.png) left top no-repeat;
+	background-size: contain;
+}
+
+.page_footer .footer_text_area .women_owned {
+	grid-area: women_owned;
+
+	width: 100%;
+	height: 100%;
+
+	background: url(../images/logo/WOBLogo.png) center center no-repeat;
+	background-size: 80% auto;
+
+	color: white;
+	border-top: solid;
+	border-width: 2px;
+}
+
+.page_footer .footer_text_area .footer_address {
+	grid-area: footer_address;
+	text-align: right;
+}
+
+.page_footer .footer_text_area .footer_address p a {
+	color: white;
+}
+
+.page_footer .footer_text_area .footer_address p:first-child {
+	margin-top: 0;
+}
+
+.page_footer .footer_text_area .footer_row_text {
+	display: flex;
+
+	width: 100%;
+
+	border-top: solid;
+	border-right: solid;
+	border-width: 2px;
+}
+
+.page_footer .footer_text_area .footer_row_text h2 {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.page_footer .footer_text_area .footer_row_text p {
+	margin-left: 15px;
+	margin-right: 15px;
+
+	color: white;
+}
+
+.page_footer .footer_text_area #footer_row1 {
+	grid-area: footer_row1;
+}
+
+.page_footer .footer_text_area #footer_row2 {
+	grid-area: footer_row2;
+}
+
+.page_footer .footer_text_area #footer_row3 {
+	grid-area: footer_row3;
+}
+
+.page_footer .footer_text_area #footer_row4 {
+	grid-area: footer_row4;
+	border-right: none;
+}
 
 @media screen and (max-width: 992px) {
 	.main_menu {
@@ -266,6 +383,26 @@ a:hover {
 			". sub_menu3 sub_menu3 sub_menu3 sub_menu3 ."
 			". sub_menu4 sub_menu4 sub_menu4 sub_menu4 ."
 			". footer footer footer footer .";
+	}
+
+	.page_footer .footer_text_area {
+		grid-template-columns: 5% 1fr 1fr 1fr 5%;
+		grid-template-areas: 
+			". . . . ."
+			". footer_logo footer_address footer_address ."
+			". footer_row1 footer_row1 women_owned ."
+			". footer_row2 footer_row2 women_owned ."
+			". footer_row3 footer_row3 women_owned ."
+			". footer_row4 footer_row4 footer_row4 ."
+			". . . . .";
+	}
+
+	.page_footer .footer_text_area .footer_row_text p {
+		font-size: 15pt;
+	}
+
+	.page_footer .footer_text_area .footer_row_text h2 {
+		font-size: 35pt;
 	}
 }
 
