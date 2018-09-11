@@ -99,6 +99,8 @@ body {
 		"content_header content_header content_description content_description"
 		"section_heading section_heading section_picture section_picture"
 		"box_grid box_grid box_grid box_grid"
+		"wide_picture wide_picture wide_picture wide_picture"
+		". wide_picture_description wide_picture_description wide_picture_description"
 		"contact_area contact_area contact_area contact_area";
 }
 
@@ -281,6 +283,59 @@ body {
 	transform: translate3d(0,0,1px);
 }
 
+.homepage_content .wide_picture {
+	grid-area: wide_picture;
+
+	width: 100%;
+
+	background: url(../images/homepage/Colorised-Transport-Unit_medium.png) top center no-repeat;
+	background-size: 100% auto;
+
+	margin-top: 50px;
+	/*margin-bottom: 50px;*/
+}
+
+.homepage_content .wide_picture h1 {
+	position: absolute;
+
+	border-style: solid;
+	border-width: 2px;
+	border-left: none;
+
+	color: #333366;
+
+	right: 10%;
+	margin-top: -120px;
+	padding-right: 30px;
+}
+
+.homepage_content .wide_picture_description {
+	grid-area: wide_picture_description;
+
+	text-align: right;
+
+	margin: 0;
+	padding: 0;
+
+	width: 86.5%;
+}
+
+.homepage_content .wide_picture_description h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.homepage_content .wide_picture_description h4 {
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+}
+
+.homepage_content .wide_picture_description h4 a {
+	text-decoration: none;
+	color: inherit;
+}
+
 @media screen and (max-width: 992px) {
 	.homepage_content {
 		grid-template-areas:
@@ -289,6 +344,8 @@ body {
 			"section_heading section_heading section_heading section_heading"
 			"section_picture section_picture section_picture section_picture"
 			"box_grid box_grid box_grid box_grid"
+			"wide_picture wide_picture wide_picture wide_picture"
+			"wide_picture_description wide_picture_description wide_picture_description wide_picture_description"
 			"contact_area contact_area contact_area contact_area";
 	}
 
@@ -367,6 +424,17 @@ body {
 	.homepage_content #nitserv_box6 {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.homepage_content .wide_picture h1 {
+		right: 7.5%;
+	}
+
+	.homepage_content .wide_picture_description {
+		width: 92.5%;
+		margin-top: 15px;
+
+		background-color: #ffffffad;
 	}
 }
 
