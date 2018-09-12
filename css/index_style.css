@@ -4,22 +4,6 @@ body {
 	padding: 0;
 }
 
-.main_menu {
-	-webkit-transition: ease-in 0.5s all;
-	transition: ease-in 0.5s all;
-	-webkit-transform: translateY(-200%);
-	-ms-transform: translateY(-200%);
-	transform: translateY(-200%);
-}
-
-.main_menu--active {
-	-webkit-transition: ease-in 0.5s all;
-	transition: ease-in 0.5s all;
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
-}
-
 .homepage_splash_screen {
 	margin: 0;
 	padding: 0;
@@ -96,26 +80,45 @@ body {
 	grid-auto-rows: auto;
 	/*grid-auto-rows: 100%;*/
 	grid-template-areas: 
-		"content_header content_header content_description content_description"
-		"section_heading section_heading section_picture section_picture"
+		"company_header company_header company_description company_description"
+		"nitserv_heading nitserv_heading nitserv_picture nitserv_picture"
 		"box_grid box_grid box_grid box_grid"
 		"wide_picture wide_picture wide_picture wide_picture"
 		". wide_picture_description wide_picture_description wide_picture_description"
+		"experience_heading experience_heading experience_picture experience_picture"
+		"experience_description experience_description experience_description experience_description"
 		"contact_area contact_area contact_area contact_area";
 }
 
 .homepage_content .content_header {
-	grid-area: content_header;
-
 	margin: 50px;
 	margin-left: 20%;
 }
 
 .homepage_content .content_description {
-	grid-area: content_description;
-
 	margin: 50px;
 	margin-right: 20%;
+}
+
+.homepage_content #company_header {
+	grid-area: company_header;
+}
+
+.homepage_content #company_description {
+	grid-area: company_description;
+}
+
+.homepage_content #experience_header {
+	grid-area: experience_header;
+}
+
+.homepage_content #experience_description {
+	grid-area: experience_description;
+	margin-left: 10%;
+}
+
+.homepage_content #experience_description p {
+	padding-left: 0;
 }
 
 .homepage_content .content_description p {
@@ -129,8 +132,6 @@ body {
 }
 
 .homepage_content .section_heading {
-	grid-area: section_heading;
-
 	margin-left: 10%;
 	padding-top: 200px;
 	padding-bottom: 50px;
@@ -139,7 +140,20 @@ body {
 }
 
 .homepage_content #nitserv_heading {
+	grid-area: nitserv_heading;
+
 	background-color: #feef52;
+}
+
+.homepage_content #experience_heading {
+	grid-area: experience_heading;
+
+	background-color: #333366e6;
+}
+
+.homepage_content #experience_heading h1,
+.homepage_content #experience_heading h5 {
+	color: white;
 }
 
 .homepage_content .section_heading h1 {
@@ -156,11 +170,17 @@ body {
 }
 
 .homepage_content .section_picture {
-	grid-area: section_picture;
 }
 
 .homepage_content #nitserv_picture {
+	grid-area: nitserv_picture;
 	background: url(../images/homepage/pumper_unit_web_edit.png) top left no-repeat;
+}
+
+.homepage_content #experience_picture {
+	grid-area: experience_picture;
+	background: url(../images/homepage/farmland_image_medium.png) top left no-repeat;
+	background-size: auto 100%;
 }
 
 .homepage_content .box_grid {
@@ -318,6 +338,8 @@ body {
 	padding: 0;
 
 	width: 86.5%;
+
+	margin-bottom: 50px;
 }
 
 .homepage_content .wide_picture_description h3 {
@@ -339,13 +361,15 @@ body {
 @media screen and (max-width: 992px) {
 	.homepage_content {
 		grid-template-areas:
-			"content_header content_header content_header content_header"
-			"content_description content_description content_description content_description"
-			"section_heading section_heading section_heading section_heading"
-			"section_picture section_picture section_picture section_picture"
+			"company_header company_header company_header company_header"
+			"company_description company_description company_description company_description"
+			"nitserv_heading nitserv_heading nitserv_heading nitserv_heading"
+			"nitserv_picture nitserv_picture nitserv_picture nitserv_picture"
 			"box_grid box_grid box_grid box_grid"
 			"wide_picture wide_picture wide_picture wide_picture"
 			"wide_picture_description wide_picture_description wide_picture_description wide_picture_description"
+			"experience_heading experience_heading experience_heading experience_heading"
+			"experience_description experience_description experience_description experience_description"
 			"contact_area contact_area contact_area contact_area";
 	}
 
@@ -354,9 +378,12 @@ body {
 		padding-bottom: 0;
 	}
 
-	.homepage_content .section_picture {
-		grid-area: section_picture;
+	.homepage_content #nitserv_picture {
 		height: 474px;
+	}
+
+	.homepage_content #experience_heading {
+		margin-left: 0;
 	}
 
 	.homepage_content .box_grid {

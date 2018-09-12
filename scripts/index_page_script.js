@@ -11,10 +11,10 @@ $(document).ready(function() {
 	});
 
 	$(document).scroll(function() {
-		if ($(document).scrollTop() >= viewportHeight) {
-			$('.main_menu').toggleClass('main_menu--active', true);
-		} else {
+		if ($(document).scrollTop() <= viewportHeight || $(document).scrollTop() + viewportHeight + 300 >= $(document).height()) {
 			$('.main_menu').toggleClass('main_menu--active', false);
+		} else {
+			$('.main_menu').toggleClass('main_menu--active', true);
 		}
 	});
 });
