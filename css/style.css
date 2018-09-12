@@ -256,8 +256,25 @@ a:hover {
 
 	grid-template-rows: 2fr 3fr;
 	grid-template-areas: 
-		"."
+		"footer_pin_drop"
 		"footer_text_area";
+}
+
+.page_footer .footer_pin_drop {
+	grid-area: footer_pin_drop;
+
+	background: url(../images/icons/pin_drop.png) left center no-repeat;
+	background-size: 50px auto;
+	background-position: 35%;
+
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+
+.page_footer .footer_pin_drop:hover {
+	background: url(../images/icons/pin_drop2.png) left center no-repeat;
+	background-size: 50px auto;
+	background-position: 35%;
 }
 
 .page_footer .footer_text_area {
