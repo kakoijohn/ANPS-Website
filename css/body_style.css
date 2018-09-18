@@ -1,0 +1,26 @@
+.body_splash_screen {
+	display: grid;
+
+	width: 100%;
+	height: 100vh;
+
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "text_area image_area";
+}
+
+.body_splash_screen .text_area {
+	grid-area: text_area;
+}
+
+.body_splash_screen .image_area {
+	grid-area: image_area;
+}
+
+.body_splash_screen #about_page_image {
+	background: url(../images/about/about_page_splash.png) left bottom no-repeat;
+	background-size: cover;
+}
+
+.body_splash_screen #about_page_text {
+	background-color: #9fe0d7;
+}
