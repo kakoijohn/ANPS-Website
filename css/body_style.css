@@ -10,10 +10,29 @@
 
 .body_splash_screen .text_area {
 	grid-area: text_area;
+
+	vertical-align: middle;
+	padding-left: 30%;
+	padding-top: 30vh;
+	margin: 0;
+
+	z-index: 1;
+}
+
+.body_splash_screen .text_area h1 {
+	margin-top: 0;
+
+	width: 200%;
+}
+
+.body_splash_screen .text_area h3 {
+
 }
 
 .body_splash_screen .image_area {
 	grid-area: image_area;
+
+	z-index: 0;
 }
 
 .body_splash_screen #about_page_image {
