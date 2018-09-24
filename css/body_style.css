@@ -43,3 +43,47 @@
 .body_splash_screen #about_page_text {
 	background-color: #9fe0d7;
 }
+
+.large_text_heading {
+	width: 100%;
+
+	margin: auto;
+}
+
+.large_text_heading h2 {
+	color: #333366;
+
+	margin: 100px;
+
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 992px) {
+	.body_splash_screen {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"text_area"
+			"image_area";
+	}
+
+	.body_splash_screen .text_area {
+		vertical-align: middle;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 20vh;
+	}
+
+	.body_splash_screen .text_area h1 {
+		width: 100%;
+	}
+
+	.body_splash_screen .image_area {
+		background-position: center center !important;
+		background-size: 200% !important;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-width: 992px) {
+
+}
