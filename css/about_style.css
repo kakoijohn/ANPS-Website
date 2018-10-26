@@ -9,6 +9,25 @@
 	background: url(../images/about/the_crew_medium.png) top left no-repeat;
 }
 
+#the_crew_box_grid {
+	grid-area: the_crew_box_grid;
+
+	grid-template-areas: 
+		". employee_1 employee_2 employee_3 .";
+}
+
+#employee_1 {
+	grid-area: employee_1;
+}
+
+#employee_2 {
+	grid-area: employee_2;
+}
+
+#employee_3 {
+	grid-area: employee_3;
+}
+
 .about_page_content {
 	display: grid;
 
@@ -16,7 +35,8 @@
 	grid-auto-rows: auto;
 	/*grid-auto-rows: 100%;*/
 	grid-template-areas: 
-		"the_crew_heading the_crew_heading the_crew_picture the_crew_picture";
+		"the_crew_heading the_crew_heading the_crew_picture the_crew_picture"
+		"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid";
 }
 
 @media screen and (max-width: 992px) {
@@ -24,9 +44,17 @@
 		grid-template-areas:
 			"the_crew_heading the_crew_heading the_crew_heading the_crew_heading"
 			"the_crew_picture the_crew_picture the_crew_picture the_crew_picture"
+			"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid";
 	}
 
 	#the_crew_picture {
 		height: 350px;
+	}
+
+	#the_crew_box_grid {
+		grid-template-areas: 
+			". employee_1 employee_1 employee_1 ."
+			". employee_2 employee_2 employee_2 ."
+			". employee_3 employee_3 employee_3 .";
 	}
 }
