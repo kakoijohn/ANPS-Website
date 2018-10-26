@@ -1,0 +1,32 @@
+#the_crew_heading {
+	grid-area: the_crew_heading;
+
+	background-color: #feef52;
+}
+
+#the_crew_picture {
+	grid-area: the_crew_picture;
+	background: url(../images/about/the_crew_medium.png) top left no-repeat;
+}
+
+.about_page_content {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	/*grid-auto-rows: 100%;*/
+	grid-template-areas: 
+		"the_crew_heading the_crew_heading the_crew_picture the_crew_picture";
+}
+
+@media screen and (max-width: 992px) {
+	.about_page_content {
+		grid-template-areas:
+			"the_crew_heading the_crew_heading the_crew_heading the_crew_heading"
+			"the_crew_picture the_crew_picture the_crew_picture the_crew_picture"
+	}
+
+	#the_crew_picture {
+		height: 350px;
+	}
+}
