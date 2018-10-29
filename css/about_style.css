@@ -28,6 +28,20 @@
 	grid-area: employee_3;
 }
 
+#pipeline_pic {
+	grid-area: pipeline_pic;
+	background: url(../images/about/pipeline_pic_medium.png) top center no-repeat;
+	background-size: cover;
+
+	height: 900px;
+	margin-top: -700px;
+	z-index: -1;
+}
+
+#careers {
+	grid-area: careers;
+}
+
 .about_page_content {
 	display: grid;
 
@@ -36,7 +50,10 @@
 	/*grid-auto-rows: 100%;*/
 	grid-template-areas: 
 		"the_crew_heading the_crew_heading the_crew_picture the_crew_picture"
-		"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid";
+		"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid"
+		"pipeline_pic pipeline_pic pipeline_pic pipeline_pic"
+		"careers careers careers careers"
+		"contact_area contact_area contact_area contact_area";
 }
 
 @media screen and (max-width: 992px) {
@@ -44,7 +61,10 @@
 		grid-template-areas:
 			"the_crew_heading the_crew_heading the_crew_heading the_crew_heading"
 			"the_crew_picture the_crew_picture the_crew_picture the_crew_picture"
-			"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid";
+			"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid"
+			"pipeline_pic pipeline_pic pipeline_pic pipeline_pic"
+			"careers careers careers careers"
+			"contact_area contact_area contact_area contact_area";
 	}
 
 	#the_crew_picture {
