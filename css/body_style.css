@@ -246,6 +246,18 @@
 		background-size: 200% !important;
 	}
 
+	.box_grid .section_box {
+		width: 70%;
+	}
+
+	.box_grid .section_box h4 {
+		background-color: #ffffffad;
+	}
+
+	.box_grid .section_box h5 {
+		background-color: #ffffffad;
+	}
+
 	.section_heading {
 		padding-top: 0;
 		padding-bottom: 0;

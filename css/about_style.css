@@ -20,12 +20,27 @@
 	grid-area: employee_1;
 }
 
+#employee_1:hover {
+	background: url(../images/about/DaveDamitsGMProfile.png) top center no-repeat;
+	background-size: 120% auto;
+}
+
 #employee_2 {
 	grid-area: employee_2;
 }
 
+#employee_2:hover {
+	background: url(../images/about/KyleDickOwnerProfile.png) top center no-repeat;
+	background-size: 120% auto;
+}
+
 #employee_3 {
 	grid-area: employee_3;
+}
+
+#employee_3:hover {
+	background: url(../images/homepage/barton_chart_small.png) top center no-repeat;
+	background-size: 120% auto;
 }
 
 #pipeline_pic {
@@ -102,7 +117,18 @@
 			". employee_3 employee_3 employee_3 .";
 	}
 
-	.section_box {
-		
+	#employee_1 {
+		background: url(../images/about/DaveDamitsGMProfile.png) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	#employee_2 {
+		background: url(../images/about/KyleDickOwnerProfile.png) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	#employee_3 {
+		background: url(../images/homepage/barton_chart_small.png) top center no-repeat;
+		background-size: 120% auto;
 	}
 }
