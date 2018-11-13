@@ -1,0 +1,31 @@
+.contact_page_content {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	/*grid-auto-rows: 100%;*/
+	grid-template-areas: 
+		"the_crew_heading the_crew_heading the_crew_picture the_crew_picture"
+		"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid"
+		"pipeline_pic pipeline_pic pipeline_pic pipeline_pic"
+		"location location location location"
+		"mission mission mission mission"
+		"capabilities capabilities capabilities capabilities"
+		"careers careers careers careers"
+		"contact_area contact_area contact_area contact_area";
+}
+
+@media screen and (max-width: 992px) {
+	.contact_page_content {
+		grid-template-areas:
+			"the_crew_heading the_crew_heading the_crew_heading the_crew_heading"
+			"the_crew_picture the_crew_picture the_crew_picture the_crew_picture"
+			"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid"
+			"pipeline_pic pipeline_pic pipeline_pic pipeline_pic"
+			"location location location location"
+			"mission mission mission mission"
+			"capabilities capabilities capabilities capabilities"
+			"careers careers careers careers"
+			"contact_area contact_area contact_area contact_area";
+	}
+}
