@@ -38,6 +38,24 @@
 	z-index: -1;
 }
 
+#location {
+	grid-area: location;
+
+	width: 80%;
+}
+
+#mission {
+	grid-area: mission;
+
+	width: 80%;
+}
+
+#capabilities {
+	grid-area: capabilities;
+
+	width: 80%;
+}
+
 #careers {
 	grid-area: careers;
 }
@@ -52,6 +70,9 @@
 		"the_crew_heading the_crew_heading the_crew_picture the_crew_picture"
 		"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid"
 		"pipeline_pic pipeline_pic pipeline_pic pipeline_pic"
+		"location location location location"
+		"mission mission mission mission"
+		"capabilities capabilities capabilities capabilities"
 		"careers careers careers careers"
 		"contact_area contact_area contact_area contact_area";
 }
@@ -63,6 +84,9 @@
 			"the_crew_picture the_crew_picture the_crew_picture the_crew_picture"
 			"the_crew_box_grid the_crew_box_grid the_crew_box_grid the_crew_box_grid"
 			"pipeline_pic pipeline_pic pipeline_pic pipeline_pic"
+			"location location location location"
+			"mission mission mission mission"
+			"capabilities capabilities capabilities capabilities"
 			"careers careers careers careers"
 			"contact_area contact_area contact_area contact_area";
 	}

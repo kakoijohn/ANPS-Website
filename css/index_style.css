@@ -38,8 +38,8 @@ body {
 	
 	text-align: right;
 	float: right;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
 }
 
 .homepage_splash_screen .splash_screen_heading .logo img {
