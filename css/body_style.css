@@ -193,6 +193,7 @@
 
 .box_grid .section_box h4 {
 	margin: 10px;
+	background-color: #ffffffad;
 }
 
 .box_grid .section_box h5 {
@@ -200,6 +201,8 @@
 
 	margin-top: -28%;
 	margin-left: 12px;
+
+	background-color: #ffffffad;
 }
 
 .overlay_image {
@@ -248,14 +251,6 @@
 
 	.box_grid .section_box {
 		width: 70%;
-	}
-
-	.box_grid .section_box h4 {
-		background-color: #ffffffad;
-	}
-
-	.box_grid .section_box h5 {
-		background-color: #ffffffad;
 	}
 
 	.section_heading {

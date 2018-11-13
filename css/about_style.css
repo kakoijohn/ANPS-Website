@@ -117,6 +117,10 @@
 			". employee_3 employee_3 employee_3 .";
 	}
 
+	#the_crew_box_grid h5 {
+		font-size: 15pt;
+	}
+
 	#employee_1 {
 		background: url(../images/about/DaveDamitsGMProfile.png) top center no-repeat;
 		background-size: 120% auto;
