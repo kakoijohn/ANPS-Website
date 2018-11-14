@@ -2,6 +2,8 @@ $(document).ready(function() {
 	var viewportHeight = $(window).height();
 	var viewportWidth = $(window).width();
 
+	console.log(viewportHeight);
+
 	$(window).resize(function() { //when the window is resized, recalculate window height
 		viewportHeight = $(window).height();
 		viewportWidth = $(window).width();
