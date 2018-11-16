@@ -163,6 +163,28 @@ a:hover {
 	grid-area: contact;
 }
 
+.drop_only {
+	position: absolute;
+
+	background: url(../images/icons/drop_down_menu.png) center center no-repeat;
+	background-size: 30px 30px;
+	background-color: white;
+
+	border-radius: 30px;
+
+	text-align: center;
+	margin: auto;
+
+	right: 0;
+	margin-right: 9.5%;
+	margin-top: 2%;
+
+    height: 40px;
+    width: 40px;
+
+    z-index: 100;
+}
+
 .full_context_menu {
 	position: fixed;
 	display: grid;
@@ -399,6 +421,18 @@ a:hover {
 	border-right: none;
 }
 
+.under_construction {
+	z-index: 1000;
+
+	position: fixed;
+
+	bottom: 0;
+
+	margin: 30px;
+	padding: 5px;
+	background-color: #000;
+}
+
 @media screen and (max-width: 992px) {
 	.main_menu {
 		grid-template-areas: ". logo logo logo logo logo drop_down drop_down .";
@@ -443,6 +477,17 @@ a:hover {
 
 	.page_footer .footer_text_area .footer_row_text h2 {
 		font-size: 35pt;
+	}
+}
+
+@media screen and (orientation:portrait) and (max-width: 992px) {
+	.drop_only {
+		background-size: 50px 50px;
+
+	    height: 60px;
+	    width: 60px;
+
+	    margin-top: 5%;
 	}
 }
 
