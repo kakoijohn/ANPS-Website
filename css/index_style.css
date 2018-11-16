@@ -35,11 +35,14 @@ body {
 
 .homepage_splash_screen .splash_screen_heading .logo {
 	grid-area: right_sidebar;
+
+	position: absolute;
 	
 	text-align: right;
 	float: right;
-	margin-top: auto !important;
-	margin-bottom: auto !important;
+
+	top: 50%;
+    transform: translateY(-50%);
 }
 
 .homepage_splash_screen .splash_screen_heading .logo img {
