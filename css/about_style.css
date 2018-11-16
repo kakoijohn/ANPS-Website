@@ -39,7 +39,7 @@
 }
 
 #employee_3:hover {
-	background: url(../images/homepage/barton_chart_small.png) top center no-repeat;
+	background: url(../images/about/heathProfile.png) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -132,7 +132,7 @@
 	}
 
 	#employee_3 {
-		background: url(../images/homepage/barton_chart_small.png) top center no-repeat;
+		background: url(../images/about/heathProfile.png) top center no-repeat;
 		background-size: 100% auto;
 	}
 
