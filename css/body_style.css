@@ -79,6 +79,26 @@
     color: #1a6558;
 }
 
+.large_text_heading ul {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+	display: table;
+}
+
+.large_text_heading ul li {
+	display: inline-flex;
+	
+	padding: 5px;
+	margin-right: 5px;
+    margin-bottom: 5px;
+
+	font-size: 15pt;
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
 .section_heading {
 	margin-left: 10%;
 	padding-top: 200px;

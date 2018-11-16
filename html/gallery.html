@@ -15,14 +15,15 @@
 
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/body_style.css">
-	<link rel="stylesheet" type="text/css" href="../css/contact_style.css">
+	<link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
 
 	<script src="../scripts/jquery.min.js"></script>
 	<script src="../scripts/jquery.visible.min.js"></script>
 	
-	<script src="../scripts/site_script.js"></script>
+	<!-- <script src="../scripts/site_script.js"></script> -->
+	<script src="../scripts/gallery_script.js"></script>
 </head>
 
 <body>
@@ -75,36 +76,18 @@
 		</div>
 	</div>
 
-	<div class="contact_page_content">
-		<div id="google_maps">
-			<div class="floating_section" id="headquarters">
-				<h3>Headquarters</h3>
-				<p><strong>Atlantic Nitrogen Pumping Services LLC.</strong></p>
-				<p><a href="https://goo.gl/maps/ttxhPZNYdVG2" target="#">100 Hamilton st. <br> Washington, Pennsylvania <br> 15301, USA</a></p>
-			</div>
-			<div class="floating_section" id="general_manager">
-				<h3>General Manager</h3>
-				<p><strong>Dave Damits</strong></p>
-				<p>Mobile Phone: <a href="tel:7247198484">724-719-8484</a><br>Email: <a href="mailto:damits@atlanticnitrogen.com">damits@atlanticnitrogen.com</a></p>
-			</div>
-			<div class="floating_section" id="manager_supervisor">
-				<h3>Manager of Pumping Services</h3>
-				<p><strong>Heath Rounsville</strong></p>
-				<p>Mobile Phone: <a href="tel:7242636644">724-263-6644</a><br>Email: <a href="mailto:heath@atlanticn2.com">heath@atlanticn2.com</a></p>
-			</div>
-			<div class="floating_section" id="general_contact">
-				<h3>General Contact</h3>
-				<p>Reach us by phone, fax, or email at:</p>
-				<p>Phone: <a href="tel:7242282213">724-228-2213</a><br>
-					Fax: <a href="tel:7242282237">724-228-2237</a><br>
-					Email: <a href="mailto:contact@atlanticn2.com">contact@atlanticn2.com</a></p>
-			</div>
-			<iframe 
-			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3048.905710098706!2d-80.2571264299164!3d40.16665302004006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb84d69375d1f6e72!2sAtlantic+Nitrogen+and+Testing!5e0!3m2!1sen!2sus!4v1542210979427" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
+	<div class="gallery_page_content">
+		<div class="image-gallery" id="images"></div>
 
-		<iframe id="contact_area" src="request_a_quote.html">
-		</iframe>
+		<div class="image-fullscreen">
+			<img class="inner-screen">
+
+			<div class="exit-button"><a id="image-fullscreen-exit">✖</a></div>
+			<div class="left-arrow"></div>
+			<div class="right-arrow"></div>
+
+			<div id="grey-area"></div>
+		</div>
 	</div>
 
 	<div class="page_footer">
