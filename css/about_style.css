@@ -21,7 +21,7 @@
 }
 
 #employee_1:hover {
-	background: url(../images/about/DaveDamitsGMProfile.png) top center no-repeat;
+	background: url(../images/about/DaveDamitsGMProfile.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -30,7 +30,7 @@
 }
 
 #employee_2:hover {
-	background: url(../images/about/KyleDickOwnerProfile.png) top center no-repeat;
+	background: url(../images/about/KyleDickOwnerProfile.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -39,13 +39,13 @@
 }
 
 #employee_3:hover {
-	background: url(../images/about/heathProfile.png) top center no-repeat;
+	background: url(../images/about/heathProfile.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
 #pipeline_pic {
 	grid-area: pipeline_pic;
-	background: url(../images/about/pipeline_pic_medium.png) top center no-repeat;
+	background: url(../images/about/pipeline_pic_medium.jpg) top center no-repeat;
 	background-size: cover;
 
 	height: 900px;
@@ -122,17 +122,17 @@
 	}
 
 	#employee_1 {
-		background: url(../images/about/DaveDamitsGMProfile.png) top center no-repeat;
+		background: url(../images/about/DaveDamitsGMProfile.jpg) top center no-repeat;
 		background-size: 100% auto;
 	}
 
 	#employee_2 {
-		background: url(../images/about/KyleDickOwnerProfile.png) top center no-repeat;
+		background: url(../images/about/KyleDickOwnerProfile.jpg) top center no-repeat;
 		background-size: 100% auto;
 	}
 
 	#employee_3 {
-		background: url(../images/about/heathProfile.png) top center no-repeat;
+		background: url(../images/about/heathProfile.jpg) top center no-repeat;
 		background-size: 100% auto;
 	}
 

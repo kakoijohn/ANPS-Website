@@ -36,7 +36,7 @@
 }
 
 .body_splash_screen #about_page_image {
-	background: url(../images/about/about_page_splash.png) left bottom no-repeat;
+	background: url(../images/about/about_page_splash.jpg) left bottom no-repeat;
 	background-size: cover;
 }
 

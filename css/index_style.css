@@ -227,7 +227,7 @@ body {
 }
 
 .homepage_content #nitserv_box1:hover {
-	background: url(../images/homepage/barton_chart_small.png) top center no-repeat;
+	background: url(../images/homepage/barton_chart_small.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -236,7 +236,7 @@ body {
 }
 
 .homepage_content #nitserv_box2:hover {
-	background: url(../images/homepage/pigging_small.png) top center no-repeat;
+	background: url(../images/homepage/pigging_small.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -247,7 +247,7 @@ body {
 }
 
 .homepage_content #nitserv_box3:hover {
-	background: url(../images/homepage/de-watering_small.png) top center no-repeat;
+	background: url(../images/homepage/de-watering_small.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -258,7 +258,7 @@ body {
 }
 
 .homepage_content #nitserv_box4:hover {
-	background: url(../images/homepage/well_stimulation_small.png) top center no-repeat;
+	background: url(../images/homepage/well_stimulation_small.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -267,7 +267,7 @@ body {
 }
 
 .homepage_content #nitserv_box5:hover {
-	background: url(../images/homepage/pipeline_maintenance_small.png) top center no-repeat;
+	background: url(../images/homepage/pipeline_maintenance_small.jpg) top center no-repeat;
 	background-size: 120% auto;
 }
 
@@ -415,7 +415,7 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 
-		background: url(../images/homepage/barton_chart_small.png) top center no-repeat;
+		background: url(../images/homepage/barton_chart_small.jpg) top center no-repeat;
 		background-size: 120% auto;
 	}
 	
@@ -423,7 +423,7 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 
-		background: url(../images/homepage/pigging_small.png) top center no-repeat;
+		background: url(../images/homepage/pigging_small.jpg) top center no-repeat;
 		background-size: 120% auto;
 	}
 	
@@ -431,7 +431,7 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 
-		background: url(../images/homepage/de-watering_small.png) top center no-repeat;
+		background: url(../images/homepage/de-watering_small.jpg) top center no-repeat;
 		background-size: 120% auto;
 	}
 	
@@ -439,7 +439,7 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 
-		background: url(../images/homepage/well_stimulation_small.png) top center no-repeat;
+		background: url(../images/homepage/well_stimulation_small.jpg) top center no-repeat;
 		background-size: 120% auto;
 	}
 	
@@ -447,7 +447,7 @@ body {
 		margin-left: auto;
 		margin-right: auto;	
 
-		background: url(../images/homepage/pipeline_maintenance_small.png) top center no-repeat;
+		background: url(../images/homepage/pipeline_maintenance_small.jpg) top center no-repeat;
 		background-size: 120% auto;
 	}
 	
