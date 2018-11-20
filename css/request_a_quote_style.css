@@ -188,3 +188,9 @@ html, body {
 		font-size: 20pt;
 	}
 }
+
+@media screen and (max-width: 992px) and (orientation:landscape) {
+	.request_a_quote {
+		height: 200vh;
+	}
+}
