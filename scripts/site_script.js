@@ -21,6 +21,10 @@ $(document).ready(function() {
 		$('.full_context_menu').toggleClass('full_context_menu--active', false);
 	});
 
+	$('.under_construction .exit').click(function() {
+		$('.under_construction').css('display', 'none');
+	});
+
 	$(document).scroll(function() {
 		if ($(document).scrollTop() + viewportHeight + 10 >= $(document).height()) {
 			$('.main_menu').toggleClass('main_menu--active', false);
