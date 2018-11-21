@@ -461,6 +461,20 @@ a:hover {
 	cursor: pointer;
 }
 
+.bg_watermark {
+	position: fixed;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+
+	margin: auto;
+
+	background: url(../images/homepage/ANPS_Watermark.png) center center no-repeat;
+	background-size: auto 65%;
+}
+
 @media screen and (max-width: 992px) {
 	.main_menu {
 		grid-template-areas: ". logo logo logo logo logo drop_down drop_down .";

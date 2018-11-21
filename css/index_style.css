@@ -508,17 +508,3 @@ body {
 	}
 }
 
-.bg_watermark {
-	position: fixed;
-
-	width: 100%;
-	height: 100%;
-
-	z-index: -1;
-
-	margin: auto;
-
-	background: url(../images/homepage/ANPS_Watermark.png) center center no-repeat;
-	background-size: auto 65%;
-}
-

@@ -27,6 +27,8 @@
 	border-style: solid;
 	border-width: 1px;
 	border-color: #333366;
+
+	background-color: white;
 }
 
 .block1 h5 {
@@ -53,6 +55,7 @@
 	border-color: #333366;
 
 	background-size: cover !important;
+	background-color: white;
 }
 
 .block3 {
@@ -65,6 +68,8 @@
 	border-style: solid;
 	border-width: 1px;
 	border-color: #333366;
+
+	background-color: white;
 }
 
 .block3 h1 {
