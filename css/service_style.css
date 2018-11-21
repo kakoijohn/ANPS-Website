@@ -92,7 +92,11 @@
 	margin-right: 30%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (orientation:portrait){
+	.service_page_content {
+		padding-top: 200px;
+	}
+
 	.block3 p {
 		margin-right: 20%;
 	}
