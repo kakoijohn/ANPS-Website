@@ -14,7 +14,7 @@
 
 	grid-template-columns: 1fr 5fr 10fr;
 
-	grid-template-areas: "block1 block2 block3"
+	grid-template-areas: "block1 block2 block3";
 }
 
 .block1 {
@@ -92,7 +92,43 @@
 	margin-right: 30%;
 }
 
-@media screen and (max-width: 992px) and (orientation:portrait){
+@media screen and (max-width: 992px) and (orientation:portrait) {
+	.three_block_heading {
+		height: 70vh;
+
+		grid-template-columns: 1fr;
+
+		grid-template-rows: 1fr 2fr 5fr; 
+
+		grid-template-areas: 
+			"block1"
+			"block2"
+			"block3";
+	}
+
+	.block1 {
+		margin-right: 0;
+	}
+
+	.block1 h5 {
+		margin-left: 5px;
+
+		font-size: 20pt;
+
+	    -webkit-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    transform-origin: 0% 0%;
+	}
+
+	.block2 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.block3 {
+		margin-left: 0;
+	}
+
 	.service_page_content {
 		padding-top: 200px;
 	}
