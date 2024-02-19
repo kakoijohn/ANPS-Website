@@ -1,6 +1,15 @@
-body {
+:root {
 	font-family: 'Rajdhani', sans-serif;
+	
+	--primary-color: #003f7e;
+	--secondary-color: #1f1f50;
+	--link-color: #5656c3;
 
+	--background-color: white;
+	--background-color--alternate: grey;
+}
+
+body {
 	margin: 0;
 	padding: 0;
 }
@@ -8,7 +17,7 @@ body {
 h1 {
 	color: white;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 40pt;
 }
 
@@ -22,26 +31,26 @@ h2 {
 }
 
 h3 {
-	color: #333366;
+	color: var(--primary-color);
 	font-weight: 400;
 	font-size: 18pt;
 }
 
 h4 {
-	color: #333366;
+	color: var(--primary-color);
 	font-size: 22pt;
 	text-transform: uppercase;
 	font-weight: 600;
 }
 
 h5 {
-	color: #333366;
+	color: var(--primary-color);
 	text-transform: uppercase;
 }
 
 a {
 	text-decoration: none;
-	color: #5656c3;
+	color: var(--link-color);
 }
 
 a:hover {
@@ -81,34 +90,37 @@ a:hover {
 	grid-template-columns: 10% 2fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
 	grid-template-areas: ". logo about nitrogen_services equipment gallery contact drop_down .";
 
-	background-color: white;
+	font-weight: bold;
 
 	z-index: 100;
+}
+
+.main_menu {
+	/* -webkit-transition: ease-in 0.5s all;
+	transition: ease-in 0.5s all;
+	-webkit-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%); */
+	background-color: transparent;
+}
+
+.main_menu--active {
+	-webkit-transition: ease-in 0.1s all;
+	transition: ease-in 0.1s all;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+
+	background-color: white;
 
 	-webkit-box-shadow: 0px 1px 10px 0px rgba(168,168,168,1);
 	-moz-box-shadow: 0px 1px 10px 0px rgba(168,168,168,1);
 	box-shadow: 0px 1px 10px 0px rgba(168,168,168,1);
 }
 
-.main_menu {
-	-webkit-transition: ease-in 0.5s all;
-	transition: ease-in 0.5s all;
-	-webkit-transform: translateY(-200%);
-	-ms-transform: translateY(-200%);
-	transform: translateY(-200%);
-}
-
-.main_menu--active {
-	-webkit-transition: ease-in 0.5s all;
-	transition: ease-in 0.5s all;
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
-}
-
 .main_menu a {
 	text-decoration: none;
-	color: #1f1f50;
+	color: var(--secondary-color);
 }
 
 .main_menu .logo {
@@ -117,8 +129,15 @@ a:hover {
 	margin-top: 5px;
 	margin-bottom: 5px;
 
-	background: url(../images/logo/ANPS_Logo_V7_Web.png) left center no-repeat;
+	background: url(../images/logo/ANTLogo.png) left center no-repeat;
 	background-size: auto 100%;
+
+	-webkit-transition: ease-in 0.5s all;
+	transition: ease-in 0.5s all;
+}
+
+.main_menu .logo--inactive {
+	opacity: 0;
 }
 
 .main_menu .drop_down {
@@ -188,33 +207,27 @@ a:hover {
 .full_context_menu {
 	position: fixed;
 	display: grid;
-
 	width: 100%;
 	height: 100%;
-
 	grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
 	grid-template-rows: 0.75fr 1fr 2fr 0.75fr;
-	grid-template-areas: 
+	grid-template-areas:
 		". logo logo logo exit_menu ."
 		". context_text context_text context_text context_text ."
 		". sub_menu1 sub_menu2 sub_menu3 sub_menu4 ."
 		". footer footer footer footer .";
-
-	background-color: grey;
-
+	background-color: var(--background-color--alternate);
 	z-index: 500;
-
-	-webkit-transition: ease-in 0.5s all;
-	transition: ease-in 0.5s all;
+	-webkit-transition: ease-in 0.1s all;
+	transition: ease-in 0.1s all;
 	-webkit-transform: translateY(-100%);
 	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
+	transform: translateY(-200%);
 }
 
 .full_context_menu--active {
-	-webkit-transition: ease-in 0.5s all;
-	transition: ease-in 0.5s all;
-
+	-webkit-transition: ease-in 0.1s all;
+	transition: ease-in 0.1s all;
 	-webkit-transform: translate3d(0,0,2px);
 	-ms-transform: translate3d(0, 0, 2px);
 	transform: translate3d(0, 0,2px);
@@ -226,8 +239,8 @@ a:hover {
 	margin-top: 5px;
 	margin-bottom: 5px;
 
-	background: url(../images/logo/ANPS_Logo_V7_Web.png) left center no-repeat;
-	background-size: auto 100%;
+	background: url(../images/logo/ANTLogo.png) left center no-repeat;
+	background-size: auto 70%;
 }
 
 .full_context_menu .exit {
@@ -235,7 +248,7 @@ a:hover {
 
 	background: url(../images/icons/exit_button.png) right center no-repeat;
 
-	background-size: auto 40%;
+	background-size: auto 30%;
 }
 
 .full_context_menu .context_text {
@@ -348,10 +361,10 @@ a:hover {
 .page_footer .footer_text_area .footer_logo {
 	grid-area: footer_logo;
 
-	width: 90%;
-	height: 90%;
+	width: 80%;
+	height: 80%;
 
-	background: url(../images/logo/ANPS_Logo_V7_Web_White.png) left top no-repeat;
+	background: url(../images/homepage/ANTLogo_white.png) left top no-repeat;
 	background-size: contain;
 }
 
@@ -471,7 +484,7 @@ a:hover {
 
 	margin: auto;
 
-	background: url(../images/homepage/ANPS_Watermark.png) center center no-repeat;
+	background: url(../images/homepage/flag_watermark.png) center center no-repeat;
 	background-size: auto 65%;
 }
 

@@ -27,7 +27,7 @@ html, body {
 }
 
 .request_a_quote .form_cell {
-	color: #333366;
+	color: var(--primary-color);
 
 	border-style: solid;
 	border-width: 2px;
@@ -45,7 +45,7 @@ html, body {
 	padding-left: 3px;
 
 	font-size: 10pt;
-	color: #333366;
+	color: var(--primary-color);
 }
 
 .request_a_quote .form_cell textarea {
@@ -60,15 +60,15 @@ html, body {
 
 .request_a_quote .form_cell input::placeholder, 
 .request_a_quote .form_cell textarea::placeholder{
-	color: #333366;
+	color: var(--primary-color);
 }
 .request_a_quote .form_cell input:-ms-input-placeholder,
 .request_a_quote .form_cell textarea:-ms-input-placeholder {
-	color: #333366;
+	color: var(--primary-color);
 }
 .request_a_quote .form_cell input::-ms-input-placeholder,
 .request_a_quote .form_cell textarea::-ms-input-placeholder {
-	color: #333366;
+	color: var(--primary-color);
 }
 
 .request_a_quote .form_cell input:focus, .request_a_quote .form_cell textarea:focus {

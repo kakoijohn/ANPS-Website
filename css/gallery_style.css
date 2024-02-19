@@ -52,7 +52,7 @@
 }
 
 .image-gallery .three-picture-section .single-image .gallery-image:hover {
-	border-color: #333366;
+	border-color: var(--primary-color);
 	cursor: zoom-in;
 }
 

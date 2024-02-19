@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$('.main_menu').load("/html/snippets/main_menu_tabs.html"); // load the main menu
+	$('.full_context_menu').load("/html/snippets/full_context_menu.html"); // load the full context menu
+	$('.page_footer').load("/html/snippets/page_footer.html"); // load the page footer
+
 	var viewportHeight = $(window).height();
 	var viewportWidth = $(window).width();
 
@@ -9,27 +13,7 @@ $(document).ready(function() {
 		viewportWidth = $(window).width();
 	});
 
-	$('#drop_down_menu').click(function() {
-		$('.full_context_menu').toggleClass('full_context_menu--active', true);
-	});
-
-	$('#drop_only_menu').click(function() {
-		$('.full_context_menu').toggleClass('full_context_menu--active', true);
-	});	
-
-	$('#drop_down_menu-exit').click(function() {
-		$('.full_context_menu').toggleClass('full_context_menu--active', false);
-	});
-
 	$('.under_construction .exit').click(function() {
 		$('.under_construction').css('display', 'none');
-	});
-
-	$(document).scroll(function() {
-		if ($(document).scrollTop() + viewportHeight + 10 >= $(document).height()) {
-			$('.main_menu').toggleClass('main_menu--active', false);
-		} else {
-			$('.main_menu').toggleClass('main_menu--active', true);
-		}
 	});
 });
