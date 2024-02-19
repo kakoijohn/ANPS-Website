@@ -1,7 +1,13 @@
 $(document).ready(function() {
 	$('.main_menu').load("/html/snippets/main_menu_tabs.html"); // load the main menu
+	$('.main_menu').load("/ANPS-Website/html/snippets/main_menu_tabs.html"); // load the main menu
+
 	$('.full_context_menu').load("/html/snippets/full_context_menu.html"); // load the full context menu
+	$('.full_context_menu').load("/ANPS-Website/html/snippets/full_context_menu.html"); // load the full context menu
+
 	$('.page_footer').load("/html/snippets/page_footer.html"); // load the page footer
+	$('.page_footer').load("/ANPS-Website/html/snippets/page_footer.html"); // load the page footer
+
 
 	var viewportHeight = $(window).height();
 	var viewportWidth = $(window).width();
