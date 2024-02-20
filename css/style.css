@@ -7,6 +7,8 @@
 
 	--background-color: white;
 	--background-color--alternate: grey;
+
+	--max-width: 992px;
 }
 
 body {
@@ -57,6 +59,10 @@ a:hover {
 	cursor: pointer;
 }
 
+li {
+	font-size: larger;
+}
+
 @media screen and (max-width: 992px) {
 	h1 {
 		font-size: 50pt;
@@ -74,10 +80,10 @@ a:hover {
 		font-size: 15pt;
 	}
 	p {
-		font-size: 25pt;
+		font-size: larger;
 	}
 	li {
-		font-size: 25pt;
+		font-size: larger;
 	}
 }
 
@@ -129,7 +135,7 @@ a:hover {
 	margin-top: 5px;
 	margin-bottom: 5px;
 
-	background: url(../images/logo/ANTLogo.png) left center no-repeat;
+	background: url(../images/logo/atlantic_nitrogen_logo.png) left center no-repeat;
 	background-size: auto 100%;
 
 	-webkit-transition: ease-in 0.5s all;
@@ -239,7 +245,7 @@ a:hover {
 	margin-top: 5px;
 	margin-bottom: 5px;
 
-	background: url(../images/logo/ANTLogo.png) left center no-repeat;
+	background: url(../images/logo/atlantic_nitrogen_logo.png) left center no-repeat;
 	background-size: auto 70%;
 }
 
